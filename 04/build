@@ -1,0 +1,5 @@
+mkdir -p bin
+as $1.s -o bin/$1.o
+ld bin/$1.o -o bin/$1
+./bin/$1
+echo $?
